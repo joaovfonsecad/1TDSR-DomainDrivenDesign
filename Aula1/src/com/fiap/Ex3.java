@@ -11,6 +11,6 @@ public class Ex3 {
         System.out.println("altura: ");
         h = sc.nextDouble();
         double area = (b * h) / 2;
-        System.out.println(area);
+        System.out.println((int)area);
     }
 }
