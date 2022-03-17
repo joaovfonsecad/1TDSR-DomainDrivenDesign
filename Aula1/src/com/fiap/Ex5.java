@@ -10,6 +10,6 @@ public class Ex5 {
         double celsius = sc.nextDouble();
 
         double faren = (celsius * 9 / 5) + 32;
-        System.out.println("temperatura em farenheits = " + faren);
+        System.out.println("temperatura em fahrenheit = " + faren);
     }
 }
