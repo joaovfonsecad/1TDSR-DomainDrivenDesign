@@ -58,10 +58,10 @@ public class Ex16 {
                 for (int i = 0; i < 3; i++) {
                     if (i != hipotenusa) {
                         somaCatetosQuadrado += (n[i] * n[i]);
-                        System.out.println(somaCatetosQuadrado);
+//                        System.out.println(somaCatetosQuadrado);
                     }
                 }
-                System.out.println(n[hipotenusa] * n[hipotenusa]);
+//                System.out.println(n[hipotenusa] * n[hipotenusa]);
                 if ((n[hipotenusa] * n[hipotenusa]) == somaCatetosQuadrado) {
                     System.out.println("É retangulo.");
                 }
