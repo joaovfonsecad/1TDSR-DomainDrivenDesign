@@ -36,11 +36,11 @@ public class Ex15 {
             if (a == b && a == c) {
                 System.out.println("Triangulo equilatero.");
             }
-            else if (a == b && a != c) {
-                System.out.println("Triangulo isóceles.");
+            else if (a != b && a != c) {
+                System.out.println("Triangulo escaleno.");
             }
             else {
-                System.out.println("Triangulo escaleno.");
+                System.out.println("Triangulo isóceles.");
             }
         }
     }
