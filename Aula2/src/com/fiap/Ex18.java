@@ -8,5 +8,21 @@ Fórmula para o cálculo da velocidade em m/s: V = v0 + a. t
 
 package com.fiap;
 
+import java.util.Scanner;
+
 public class Ex18 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("aceleração(m/s2): ");
+        double acel = sc.nextDouble();
+        System.out.print("velocidade inicial(m/s):");
+        double velo = sc.nextDouble();
+        System.out.print("tempo do percurso:");
+        double tempo = sc.nextDouble();
+
+        double veloFinal = velo + (acel * tempo);
+        double veloFInalKMS = veloFinal * 3.6;
+        System.out.println("Velocidade final: " + String.format("%.2f", veloFInalKMS) + "Km/h");
+    }
 }
