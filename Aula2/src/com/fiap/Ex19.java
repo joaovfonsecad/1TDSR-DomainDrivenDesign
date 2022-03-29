@@ -12,6 +12,19 @@ que a média de aprovação é igual a cinco.
 
 package com.fiap;
 
-public class Ex19 {
+import java.util.Scanner;
 
+public class Ex19 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("P1: ");
+        double p1 = sc.nextDouble();
+        System.out.print("P2: ");
+        double p2 = sc.nextDouble();
+
+        double media = (p1 + (2 * p2)) / 3;
+
+        System.out.println("Média = " + String.format("%.1f", media));
+    }
 }
