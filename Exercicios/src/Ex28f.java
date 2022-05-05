@@ -1,3 +1,5 @@
+//Exibir a soma dos números inteiros positivos do intervalo de um a cem.
+
 public class Ex28f {
     public static void main(String[] args) {
         System.out.println("Soma dos números inteiros no intervalo de 1 a 100:");

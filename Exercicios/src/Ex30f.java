@@ -1,3 +1,5 @@
+//Exibir os vinte primeiros valores da série de Bergamaschi. A série: 1, 1, 1, 3, 5, 9, 17, ...
+
 public class Ex30f {
     public static void main(String[] args) {
         int bergaA = 1;
