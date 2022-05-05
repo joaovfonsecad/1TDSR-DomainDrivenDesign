@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class Ex26w {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int result = 0;
+        int result;
 
         System.out.println("Insira um número positivo e descubra sua tabuada:");
         int xQualquer = sc.nextInt();
