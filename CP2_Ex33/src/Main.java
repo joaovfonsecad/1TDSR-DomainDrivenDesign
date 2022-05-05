@@ -1,38 +1,31 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         Produto[] produtos = new Produto[10];
 
-        Produto a = new Produto();
-        produtos[0] = a;
-        Produto b = new Produto();
-        produtos[1] = b;
-        Produto c = new Produto();
-        produtos[2] = c;
-        Produto d = new Produto();
-        produtos[3] = d;
-        Produto e = new Produto();
-        produtos[4] = e;
-        Produto f = new Produto();
-        produtos[5] = f;
-        Produto g = new Produto();
-        produtos[6] = g;
-        Produto h = new Produto();
-        produtos[7] = h;
-        Produto i = new Produto();
-        produtos[8] = i;
-        Produto j = new Produto();
-        produtos[9] = j;
+        for (int i = 0; i < 10; i++) {
+            Produto p = new Produto();
+            p.id = (i + 1);
 
-        for (int x = 0; x < 10; x++) {
-            produtos[x].id = x;
-            produtos[x].quantidade = Math.random() * 10;
-            produtos[x].valor = Math.random() * 300;
-            produtos[x].descricao = x + "º produto maravilhoso.";
+            System.out.println("Descrição do produto:");
+            p.descricao = sc.nextLine();
+
+            System.out.println("Quantidade:");
+            p.quantidade = sc.nextDouble();
+
+            System.out.println("Valor:");
+            p.valor = sc.nextDouble();
+
+            produtos[i] = p;
+            sc.nextLine();
+            System.out.println("-------------");
         }
 
-        for (int x = 0; x < 10; x++) {
-            if (produtos[x].valor < 100) {
-                System.out.println((x + 1) + "º produto custa menos de 100 reais.");
+        for (int i = 0; i < 10; i++) {
+            if (produtos[i].valor < 100) {
+                System.out.println((i + 1) + "º: " + produtos[i].descricao + "\nvalor: " + produtos[i].valor + "\nquantidade: " + produtos[i].quantidade);
             }
         }
     }
